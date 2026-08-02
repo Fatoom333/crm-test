@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини CRM</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Добавление лида</h1>
+
+<div class="form">
+
+    <label>
+        Имя клиента
+        <input id="name" type="text">
+    </label>
+
+    <label>
+        Телефон
+        <input id="phone" type="tel">
+    </label>
+
+    <label>
+        Источник
+        <select id="source">
+            <option>Холодный</option>
+            <option>Тёплый</option>
+        </select>
+    </label>
+
+    <label>
+        Ответственный
+        <select id="manager">
+            <option>Лидоруб</option>
+            <option>МОП</option>
+        </select>
+    </label>
+
+    <label>
+        Этап сделки
+        <select id="stage">
+            <option>Новый лид</option>
+            <option>Квалифицирован</option>
+            <option>Назначена консультация</option>
+            <option>Отказ</option>
+        </select>
+    </label>
+
+    <label class="checkbox">
+        <input id="requested" type="checkbox">
+        Запрошено ТЗ
+    </label>
+
+    <button id="saveBtn">Сохранить</button>
+
+    <p id="error" class="error"></p>
+
+</div>
+
+<hr>
+
+<h2>Лиды</h2>
+
+<div id="leads"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

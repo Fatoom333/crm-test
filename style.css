@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    max-width: 700px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input,
+select,
+button {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button {
+    width: fit-content;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 10px;
+    background: #f7f7f7;
+}
+
+.card select {
+    margin-left: 6px;
+    padding: 4px;
+}
+
+.card {
+    margin-bottom: 12px;
+}
+
+.stageSelect {
+    margin-left: 6px;
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    color: white;
+}
+
+.stage-new {
+    background-color: #6c757d;
+}
+
+.stage-qualified {
+    background-color: #28a745;
+}
+
+.stage-consultation {
+    background-color: #007bff;
+}
+
+.stage-rejected {
+    background-color: #dc3545;
+}
